@@ -16,8 +16,37 @@ var arr = ['orange', 'aranciata', 'potato', 'vodka'];
 
 var rando = _.sample(arr);
 
-var con = _.contains(arr, 'orange', arr.length - 3);
+var con = _.contains(arr, 'orange');
 
-console.log(rando);
+// var eachs = _.forEach(arr, function(n, key) {
+// 	console.log(n, key);
+// });
 
-console.log(con);
+var arr2 = ["dr.seuss", "waldorf salad", "shel silverstein", "waldo"];
+
+
+
+wheresWaldo = function(arr) {
+	//._each if contains "waldo"
+	console.log(arr);
+	 var wald;
+	_(arr).each(function(arr) {
+		 if(_.contains(arr, "waldo")){
+		 	wald = arr
+		 	console.log(wald);
+		 };
+	});
+	console.log(wald);
+	return wald;
+
+};
+
+// wheresWaldo(arr2);
+
+assert(wheresWaldo(["walls", "dr.seuss",
+	"waldorf salad"]) === "waldorf salad", "waldo");
+
+
+// console.log(rando);
+
+// console.log(con);
