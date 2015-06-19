@@ -11,3 +11,13 @@ function assert(expression, failureMessage) {
     console.log("assertion failure: ", failureMessage);
   }
 }
+
+var arr = ['orange', 'aranciata', 'potato', 'vodka'];
+
+var rando = _.sample(arr);
+
+var con = _.contains(arr, 'orange', arr.length - 3);
+
+console.log(rando);
+
+console.log(con);
